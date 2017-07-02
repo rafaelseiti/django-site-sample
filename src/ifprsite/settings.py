@@ -25,7 +25,7 @@ SECRET_KEY = 'y9&omzc+$a!-=vmyw8bi3(e_m*hkv98lxj%l42%i-m660&lz*6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://pyrsotaki.pythonanywhere.com/']
 
 
 # Application definition
