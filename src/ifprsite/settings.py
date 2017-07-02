@@ -25,7 +25,7 @@ SECRET_KEY = 'y9&omzc+$a!-=vmyw8bi3(e_m*hkv98lxj%l42%i-m660&lz*6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://pyrsotaki.pythonanywhere.com/']
+ALLOWED_HOSTS = ["pyrsotaki.pythonanywhere.com"]
 
 
 # Application definition
@@ -86,7 +86,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
