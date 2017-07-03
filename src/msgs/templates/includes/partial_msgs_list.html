@@ -1,0 +1,19 @@
+{% for mensagem in mensagens %}
+    <tr class="uk-visible-toggle">
+        <td>
+            <a href="javascript:void(0)" data-crud="det" data-id="{{mensagem.pk}}" title="{{mensagem.mensagem}}">{{ mensagem }}</a>
+        </td>
+        <td class="td-options uk-invisible-hover">
+            <div class="uk-text-right">
+                <a href="#mdl-addedit" class="uk-icon-link uk-margin-small-right" data-crud="edit" data-id="{{mensagem.pk}}" uk-toggle uk-icon="icon: pencil"></a>
+                <a href="#" class="uk-icon-link" uk-icon="icon: trash" data-crud="del"></a>
+            </div>
+        </td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="2">
+            Nenhuma mensagem cadastrada...
+        </td>
+    </tr>
+{% endfor %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Listar mensagens{% endblock %}
+
+{% block content %}
+<div class="uk-container uk-container-small">
+    <h2 class="uk-heading-line uk-text-center"><span>Mensagens</span></h2>
+
+    <div class="uk-padding-small">
+        <table id="tbl-msgs" class="uk-table uk-table-divider">
+            <thead>
+                <tr>
+                    <th>Listar</th>
+                    <td class="uk-text-right">
+                        <button class="uk-button uk-button-large uk-button-text" data-crud="add"><i class="uk-icon" uk-icon="icon: plus-circle"></i> Add</button>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+            {% include 'includes/partial_msgs_list.html' %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="mdl-addedit" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body"></div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+{% load staticfiles %}
+<script src="{% static "js/msgs.scripts.js" %}"></script>
+{% endblock %}

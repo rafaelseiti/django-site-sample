@@ -1,0 +1,33 @@
+{
+  "name": "django-tutorial-first-site",
+  "version": "1.0.0",
+  "description": "Django tutorial, first site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelseiti/django-site-sample.git"
+  },
+  "keywords": [
+    "python",
+    "django",
+    "sample"
+  ],
+  "author": "Rafael Otaki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelseiti/django-site-sample/issues"
+  },
+  "homepage": "https://github.com/rafaelseiti/django-site-sample#readme",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
+    "uikit": "^3.0.0-beta.25"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-minify-css": "^1.2.4"
+  }
+}

@@ -1,0 +1,18 @@
+<form method="post" action="{% url 'msg_create' %}" class="uk-form-stacked">
+    {% csrf_token %}
+
+    <div class="uk-margin">
+        <label class="uk-form-label" for="mensagem">Mensagem</label>
+        <div class="uk-form-controls">
+            <input type="text" name="mensagem" id="mensagem" class="uk-input" placeholder="Mensagem" value="{{ form.mensagem.value }}">
+            {% for error in form.mensagem.errors %}
+            <span class="uk-text-danger">{{ error }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <p class="uk-text-right">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+        <button type="submit" id="btn-add" class="uk-button uk-button-primary" type="button">Salvar</button>
+    </p>
+</form>

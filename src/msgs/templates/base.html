@@ -1,0 +1,25 @@
+{% load staticfiles %}<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Home{% endblock %} | Django tutorial - First site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="{% static "uikit/css/uikit.min.css" %}">
+        <link rel="stylesheet" href="{% static "normalize/normalize.css" %}">
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+
+        <div class="uk-container">
+            <h1 class="uk-heading-bullet">Welcome to the site <strong class="uk-text-success">Django</strong>!</h1>
+            <hr>
+            {% block content %}{% endblock %}
+        </div>
+
+        <script src="{% static "plugins/jquery/jquery.min.js" %}"></script>
+        <script src="{% static "uikit/js/uikit.min.js" %}"></script>
+        <script src="{% static "uikit/js/uikit-icons.min.js" %}"></script>
+        {% block scripts %}{% endblock %}
+    </body>
+</html>
